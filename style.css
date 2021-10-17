@@ -48,7 +48,6 @@ strong {
   font-size: 1.25rem;
   width: fit-content;
   max-width: 350px;
-  padding: 16px;
 }
 
 .title {
@@ -58,6 +57,7 @@ strong {
 
 .card {
   padding: 16px;
+  margin: -16px;
   background-color: var(--gray-white);
   border-bottom: 8px solid var(--gray-medium);
 }
@@ -67,9 +67,7 @@ strong {
   margin-right: 32px;
   margin-left: -32px;
 
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-right: 16px;
+  padding: 16px;
   padding-left: 32px;
 
   width: fit-content;
@@ -78,7 +76,7 @@ strong {
 }
 
 .max-width-wrapper {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   max-width: 550px;
+  padding: 16px;
 }
