@@ -1,12 +1,84 @@
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+
+  /* Primary (green): */
+  --primary: hsl(160deg, 100%, 30%);
+
+  /* Secondary (gold): */
+  --secondary-light: hsl(45deg, 100%, 50%);
+  --secondary-dark: hsl(45deg, 100%, 40%);
+  
+  /* Grays: */
+  --gray-black: hsl(0deg, 0%, 0%);
+  --gray-very-dark: hsl(0deg, 0%, 10%);
+  --gray-dark: hsl(0deg, 0%, 30%);
+  --gray-medium: hsl(0deg, 0%, 40%);
+  --gray-light: hsl(0deg, 0%, 60%);
+  --gray-white: hsl(0deg, 0%, 100%);
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  line-height: 1.5;
+  background-color: var(--gray-light);
 }
 
 /* Add styles here! */
+header {
+  background-color: var(--gray-white);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+main {
+  border-top: 8px solid var(--gray-medium);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--gray-light);
+}
+
+strong {
+  color: var(--primary);
+}
+
+.intro-chunk {
+  font-size: 1.25rem;
+  width: fit-content;
+  max-width: 350px;
+  padding: 16px;
+}
+
+.title {
+  font-size: 1.75rem;
+  margin-bottom: 40px;
+}
+
+.card {
+  padding: 16px;
+  background-color: var(--gray-white);
+  border-bottom: 8px solid var(--gray-medium);
+}
+
+.indented-heading {
+  margin-top: -8px;
+  margin-right: 32px;
+  margin-left: -32px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 16px;
+  padding-left: 32px;
+
+  width: fit-content;
+  background-color: var(--secondary-light);
+  border-bottom: 8px solid var(--secondary-dark)
+}
+
+.max-width-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 550px;
+}
